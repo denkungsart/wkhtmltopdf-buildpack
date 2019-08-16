@@ -10,8 +10,9 @@ BIN_PATH="$BUILD_DIR/bin"
 TMP_PATH="$BUILD_DIR/tmp"
 mkdir -p $CACHE_DIR $BIN_PATH $TMP_PATH
 
+WKHTMLTOPDF_VERSION="0.12.5.1"
 WKHTMLTOPDF_URL="https://s3-eu-west-1.amazonaws.com/denkungsart/heroku/buildpacks/heroku-18/wkhtmltopdf-0.12.5.1/wkhtmltox_0.12.5-1.bionic_amd64.tar.xz"
-WKHTMLTOPDF_TAR="$CACHE_DIR/wkhtmltox.tar.xz"
+WKHTMLTOPDF_TAR="$CACHE_DIR/wkhtmltox-$WKHTMLTOPDF_VERSION.tar.xz"
 WKHTMLTOPDF_PATH="$TMP_PATH/wkhtmltox"
 WKHTMLTOPDF_BINARIES="$WKHTMLTOPDF_PATH/bin"
 
